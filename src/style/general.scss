@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import './style/variables.scss';
+
+body{
+    background-color: #1e2d3b;
+    color: $text_color;
+}
+h2{
+    color: $h2_color;
+}
