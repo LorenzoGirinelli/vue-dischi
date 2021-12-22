@@ -12,3 +12,11 @@ body{
 h2{
     color: $h2_color;
 }
+.container{
+    width: 75%;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+    width: 170px;
+}
