@@ -1,7 +1,8 @@
 <template>
     <section>
         <div class="container">
-            <DiscCard />
+            <DiscCard v-for="(element, index) in disc.response" :key="index" />
+            <DiscCard v-for="(element, index) in disc.response" :key="index" :details="element" />
         </div>
     </section>
 </template>

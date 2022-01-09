@@ -7,16 +7,21 @@
 
 body{
     background-color: #1e2d3b;
-    color: $text_color;
+    color: $color_text;
 }
 h2{
-    color: $h2_color;
+    color: $color_author;
 }
 .container{
-    width: 75%;
+    width: 70%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 img {
     max-width: 100%;
     width: 170px;
+    margin: auto;
 }

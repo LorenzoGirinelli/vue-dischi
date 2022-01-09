@@ -16,10 +16,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variables.scss';
 .logo{
-    padding: 20px;
+    padding: 15px;
     img{
         width: 50px;
     }
+}
+header{
+    background-color: $color_header;
 }
 </style>
