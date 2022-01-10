@@ -1,20 +1,27 @@
 <template>
-    <section>
+    <main>
+        <div class="conatainer">
+            <Filter />
+        </div>
+
         <div class="container">
             <DiscCard v-for="(element, index) in disc.response" :key="index" />
             <DiscCard v-for="(element, index) in disc.response" :key="index" :details="element" />
         </div>
-    </section>
+    </main>
 </template>
 
 <script>
 import axios from 'axios';
+
 import DiscCard from './DiscCard';
+import Filter from './Filter';
 
 export default {
     nome: 'DiscList',
     components: {
-        DiscCard
+        DiscCard,
+        Filter,
     },
     data: function () {
         return {
