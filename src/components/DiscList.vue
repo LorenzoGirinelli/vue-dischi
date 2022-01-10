@@ -1,11 +1,10 @@
 <template>
     <main>
-        <div class="conatainer">
-            <Filter />
+        <div class="search-container">
+            <Search />
         </div>
 
         <div class="container">
-            <DiscCard v-for="(element, index) in disc.response" :key="index" />
             <DiscCard v-for="(element, index) in disc.response" :key="index" :details="element" />
         </div>
     </main>
@@ -15,13 +14,13 @@
 import axios from 'axios';
 
 import DiscCard from './DiscCard';
-import Filter from './Filter';
+import Search from './Search';
 
 export default {
     nome: 'DiscList',
     components: {
         DiscCard,
-        Filter,
+        Search,
     },
     data: function () {
         return {
