@@ -1,7 +1,7 @@
 <template>
     <div>
         <select v-model="selectValue" name="" id="">
-            <option value="All">All</option>
+            <option value="">All</option>
             <option value="Rock">Rock</option>
             <option value="Jazz">Jazz</option>
             <option value="Cassic">Cassic</option>
